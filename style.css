@@ -1,0 +1,96 @@
+/* --- Global Styles & Readability --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+    line-height: 1.6; /* Improved vertical rhythm for text */
+    color: #333; /* Dark gray for good contrast */
+    background-color: #f8f8f8; /* Light gray background */
+    max-width: 900px; /* Limits content width for better readability on large screens */
+    margin: 40px auto; /* Centers the content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle lift effect */
+}
+
+/* --- Headings --- */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* A contrasting font for titles */
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Main Title (H1) */
+h1 {
+    font-size: 2.5em;
+    border-bottom: 4px solid #007bff; /* Primary blue underline for the main title */
+    padding-bottom: 10px;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Section Titles (H2) */
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Sub-section Titles (H3) */
+h3 {
+    font-size: 1.4em;
+    color: #555;
+}
+
+/* --- Links --- */
+a {
+    color: #007bff; /* Standard blue for links */
+    text-decoration: none; /* Removes the default underline */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+/* --- Text & Emphasis --- */
+p {
+    margin-bottom: 15px;
+}
+
+em, i { /* Italic text, like the hardware recommendations */
+    color: #666; /* Slight graying out to distinguish from main text */
+    font-style: italic;
+    display: block; /* Makes the recommendation a distinct block */
+    padding: 10px 0;
+}
+
+/* --- Lists (Datakällor, Map & topography) --- */
+ul, ol {
+    margin: 15px 0 15px 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    list-style-type: '👉 '; /* Custom bullet point for a modern look */
+    padding-left: 5px;
+}
+
+/* --- Blockquotes (Plugin development tutorial quotes) --- */
+blockquote {
+    border-left: 5px solid #ffc107; /* Warning yellow border */
+    background-color: #fffacd; /* Light background for the quote */
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    color: #444;
+}
+
+/* --- Code & Pre-formatted Text (if used) --- */
+code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
