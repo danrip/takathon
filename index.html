@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKathon 2025</title>
+    
+    <style>
+        /* --- Global Styles & Readability --- */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+            line-height: 1.6; /* Improved vertical rhythm for text */
+            color: #333; /* Dark gray for good contrast */
+            background-color: #f8f8f8; /* Light gray background */
+            max-width: 900px; /* Limits content width for better readability on large screens */
+            margin: 40px auto; /* Centers the content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle lift effect */
+        }
+
+        /* --- Headings --- */
+        h1, h2, h3 {
+            font-family: 'Georgia', serif; /* A contrasting font for titles */
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        /* Main Title (H1) */
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 4px solid #007bff; /* Primary blue underline for the main title */
+            padding-bottom: 10px;
+            text-align: center;
+            color: #007bff;
+        }
+
+        /* Section Titles (H2) */
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* Sub-section Titles (H3) */
+        h3 {
+            font-size: 1.4em;
+            color: #555;
+        }
+
+        /* --- Links --- */
+        a {
+            color: #007bff; /* Standard blue for links */
+            text-decoration: none; /* Removes the default underline */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: underline; /* Adds underline on hover for clarity */
+        }
+
+        /* --- Text & Emphasis --- */
+        p {
+            margin-bottom: 15px;
+        }
+
+        em, i { /* Italic text, like the hardware recommendations */
+            color: #666; /* Slight graying out to distinguish from main text */
+            font-style: italic;
+            display: block; /* Makes the recommendation a distinct block */
+            padding: 10px 0;
+        }
+
+        /* --- Lists (Datakällor, Map & topography) --- */
+        ul, ol {
+            margin: 15px 0 15px 20px;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            list-style-type: '👉 '; /* Custom bullet point for a modern look */
+            padding-left: 5px;
+        }
+        
+        /* Specific styling for nested lists */
+        ul li ul li {
+             list-style-type: '— '; /* Different marker for nested lists */
+        }
+
+
+        /* --- Blockquotes (Plugin development tutorial quotes) --- */
+        blockquote {
+            border-left: 5px solid #ffc107; /* Warning yellow border */
+            background-color: #fffacd; /* Light background for the quote */
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* --- Code & Pre-formatted Text (if used) --- */
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TAKathon 2025</h1>
+
+    <h2>Intro</h2>
+    <p>TBD</p>
+
+    <h2>Rekommenderade enheter</h2>
+    <p>All utveckling av plug-ins och liknande skall ske mot Android-baserade telefoner.</p>
+    <em>For small phone-sized devices, hardware equivalent to a Samsung S5 or newer is required. For tablet-sized devices, the Samsung Tab S or newer is recommended. To ensure an optimal experience, it’s advised to use at least Samsung S9-equivalent hardware or newer for phones, and a Samsung Tab S2 or newer for tablets.</em>
+
+    <h3>TAK-server</h3>
+    <p>Vid behov kan en docker image tillhandahållas, alternativt skapas själv. TAK.gov tillhandahåller ett beta-verktyg för att skapa developer docker images : <a href="https://tak.gov/tak_server_configurator/container_operating_system">https://tak.gov/tak_server_configurator/container_operating_system</a></p>
+
+    <h2>Community</h2>
+    <p><a href="https://www.reddit.com/r/ATAK/wiki/index/">https://www.reddit.com/r/ATAK/wiki/index/</a></p>
+
+    <h2>Plugin utveckling</h2>
+    <p><a href="https://www.civtak.org/2024/12/04/atak-plugin-development-tutorial/">https://www.civtak.org/2024/12/04/atak-plugin-development-tutorial/</a>.</p>
+    <blockquote>
+        Part 1 <a href="https://www.youtube.com/watch?v=3qSsMcYXrvI">https://www.youtube.com/watch?v=3qSsMcYXrvI</a>
+        Part 2 <a href="https://www.youtube.com/watch?v=LgzLesTKWcc">https://www.youtube.com/watch?v=LgzLesTKWcc</a>
+    </blockquote>
+
+    <p><a href="https://www.riis.com/blog/atak-plugins-part-1">https://www.riis.com/blog/atak-plugins-part-1</a></p>
+    <p><a href="https://www.riis.com/blog/plugins-with-atak-civ-sdk-5-5">https://www.riis.com/blog/plugins-with-atak-civ-sdk-5-5</a></p>
+
+    <h3>Plugins (docs &amp; samples)</h3>
+    <p><a href="https://github.com/Toyon/LearnATAK">https://github.com/Toyon/LearnATAK</a></p>
+
+    <h2>Datakällor</h2>
+
+    <h3>Weather</h3>
+    <p><a href="https://opendatadocs.dmi.govcloud.dk/DMIOpenData">https://opendatadocs.dmi.govcloud.dk/DMIOpenData</a></p>
+
+    <h3>Comms</h3>
+    <p><a href="https://github.com/meshtastic/pluginmeshtastic">https://github.com/meshtastic/pluginmeshtastic</a></p>
+
+    <h3>Map &amp; topography</h3>
+    <ul>
+        <li>Elevation data : <a href="https://github.com/ollighost/DTED-LVL2-4-TAK">https://github.com/ollighost/DTED-LVL2-4-TAK</a></li>
+        <li>Sverige/Norge/Finland : <a href="https://mega.nz/file/2aQzGaCZ#s4z0fhLXmSiaDUwoPISGkfWIQ2AY4G1upsgMAro2QL0">https://mega.nz/file/2aQzGaCZ#s4z0fhLXmSiaDUwoPISGkfWIQ2AY4G1upsgMAro2QL0</a></li>
+        <li>Topo maps (Finland) : <a href="https://www.gofferje.net/it-stuff/set-up-offline-mapserver/">https://www.gofferje.net/it-stuff/set-up-offline-mapserver/</a></li>
+        <li>Collection : <a href="https://github.com/joshuafuller/ATAK-Maps">https://github.com/joshuafuller/ATAK-Maps</a></li>
+    </ul>
+
+    <h3>Conflict map (Ukraine)</h3>
+    <ul>
+        <li><a href="https://deepstatemap.live/#6/49.4383200/32.0526800">https://deepstatemap.live/#6/49.4383200/32.0526800</a></li>
+        <li>API : <a href="https://deepstatemap.live/api/history/last">https://deepstatemap.live/api/history/last</a></li>
+    </ul>
+
+    <h3>Airplane data</h3>
+    <ul>
+        <li><a href="https://globe.airplanes.live">https://globe.airplanes.live</a></li>
+        <li><a href="https://github.com/ADSB-One/api/blob/main/README.md">https://github.com/ADSB-One/api/blob/main/README.md</a></li>
+        <li>ADSB-ID mapping <a href="https://github.com/sgofferj/TAK-ADSB-ID">https://github.com/sgofferj/TAK-ADSB-ID</a></li>
+    </ul>
+
+    <h2>Server feeders</h2>
+    <p>A feeder pulls data, converts the current events to CoT messages and sends them to a TAK server. ATAK, WinTAK and WebTAK will show the events with icons corresponding to the type of event and the severity (WinTAK doesn't show the color, though).</p>
+    <ul>
+        <li>Ukraine <a href="https://github.com/sgofferj/tak-feeder-deepstate">https://github.com/sgofferj/tak-feeder-deepstate</a> (server feeder)</li>
+        <li>Global disaster data (GDACS) : <a href="https://github.com/sgofferj/tak-feeder-gdacs">https://github.com/sgofferj/tak-feeder-gdacs</a> (server feeder)</li>
+        <li>Finnish weather <a href="https://github.com/sgofferj/tak-feeder-weather-fmi">https://github.com/sgofferj/tak-feeder-weather-fmi</a> (server feeder)</li>
+    </ul>
+
+    <h2>Övrigt</h2>
+    <ul>
+        <li>Garmin watch integration : <a href="https://github.com/TDF-PL/TAKWatch/">https://github.com/TDF-PL/TAKWatch/</a></li>
+        <li>Traffic cameras : <a href="https://github.com/ScriptTactics/ATAK-CoT-Converters">https://github.com/ScriptTactics/ATAK-CoT-Converters</a></li>
+    </ul>
+
+</body>
+</html>
